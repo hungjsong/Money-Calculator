@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bill5label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_5Bill"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/numpad7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill10" />
+
+    <TextView
+        android:id="@+id/bill50label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_50Bill"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/numpad1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill100" />
+
+    <TextView
+        android:id="@+id/coin50label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_50c"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill1" />
+
+    <TextView
+        android:id="@+id/bill20label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_20Bill"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/numpad1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill50" />
+
+    <TextView
+        android:id="@+id/bill100label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/_100Bill"
+        app:layout_constraintEnd_toStartOf="@+id/numpad1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/coin5label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_5c"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/coin10label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_10c"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin20" />
+
+    <TextView
+        android:id="@+id/bill10label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_10Bill"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/numpad4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill20" />
+
+    <TextView
+        android:id="@+id/coin20label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_20c"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin50" />
+
+    <TextView
+        android:id="@+id/bill1label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_1Bill"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/numpad0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill5" />
+
+    <TextView
+        android:id="@+id/enteredNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/rm0_00"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="RM0.00" />
+
+    <Button
+        android:id="@+id/numpad1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="245dp"
+        android:onClick="onePressed"
+        android:text="@string/_1"
+        app:layout_constraintBottom_toTopOf="@+id/numpad4"
+        app:layout_constraintEnd_toStartOf="@+id/numpad2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/numpad2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="245dp"
+        android:onClick="twoPressed"
+        android:text="@string/_2"
+        app:layout_constraintBottom_toTopOf="@+id/numpad5"
+        app:layout_constraintEnd_toStartOf="@+id/numpad3"
+        app:layout_constraintStart_toEndOf="@+id/numpad1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/numpad3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="threePressed"
+        android:text="@string/_3"
+        app:layout_constraintBottom_toTopOf="@+id/numpad6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numpad2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/numpad4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="200dp"
+        android:onClick="fourPressed"
+        android:text="@string/_4"
+        app:layout_constraintEnd_toStartOf="@+id/numpad5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numpad1" />
+
+    <Button
+        android:id="@+id/numpad5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="fivePressed"
+        android:text="@string/_5"
+        app:layout_constraintEnd_toStartOf="@+id/numpad6"
+        app:layout_constraintStart_toEndOf="@+id/numpad4"
+        app:layout_constraintTop_toBottomOf="@+id/numpad2" />
+
+    <Button
+        android:id="@+id/numpad6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="sixPressed"
+        android:text="@string/_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numpad5"
+        app:layout_constraintTop_toBottomOf="@+id/numpad3" />
+
+    <Button
+        android:id="@+id/numpad7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="200dp"
+        android:onClick="sevenPressed"
+        android:text="@string/_7"
+        app:layout_constraintEnd_toStartOf="@+id/numpad8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numpad4" />
+
+    <Button
+        android:id="@+id/numpad8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="eightPressed"
+        android:text="@string/_8"
+        app:layout_constraintEnd_toStartOf="@+id/numpad9"
+        app:layout_constraintStart_toEndOf="@+id/numpad7"
+        app:layout_constraintTop_toBottomOf="@+id/numpad5" />
+
+    <Button
+        android:id="@+id/numpad9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="ninePressed"
+        android:text="@string/_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numpad8"
+        app:layout_constraintTop_toBottomOf="@+id/numpad6" />
+
+    <Button
+        android:id="@+id/numpad0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="195dp"
+        android:onClick="zeroPressed"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/numpadBackspace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numpad7" />
+
+    <Button
+        android:id="@+id/numpadClear"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:onClick="clearPressed"
+        android:text="@string/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numpadBackspace" />
+
+    <Button
+        android:id="@+id/numpadBackspace"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="35dp"
+        android:onClick="backspacePressed"
+        android:text="@string/backspace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numpad0"
+        app:layout_constraintTop_toBottomOf="@+id/numpad8" />
+
+    <TextView
+        android:id="@+id/bill100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/bill100"
+        app:layout_constraintEnd_toStartOf="@+id/numpad1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bill50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bill50"
+        app:layout_constraintEnd_toStartOf="@+id/numpad1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill100" />
+
+    <TextView
+        android:id="@+id/bill20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bill20"
+        app:layout_constraintEnd_toStartOf="@+id/numpad1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill50" />
+
+    <TextView
+        android:id="@+id/bill10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bill10"
+        app:layout_constraintEnd_toStartOf="@+id/numpad4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill20" />
+
+    <TextView
+        android:id="@+id/bill5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bill5"
+        app:layout_constraintEnd_toStartOf="@+id/numpad7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill10" />
+
+    <TextView
+        android:id="@+id/bill1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bill1"
+        app:layout_constraintEnd_toStartOf="@+id/numpad0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill5" />
+
+    <TextView
+        android:id="@+id/coin50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/coin50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill1" />
+
+    <TextView
+        android:id="@+id/coin20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/coin20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin50" />
+
+    <TextView
+        android:id="@+id/coin10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/coin10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin20" />
+
+    <TextView
+        android:id="@+id/coin5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/coin5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin10"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
